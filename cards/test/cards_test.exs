@@ -12,3 +12,4 @@ defmodule CardsTest do
     refute deck == Cards.shuffle(deck)
   end
 end
+
