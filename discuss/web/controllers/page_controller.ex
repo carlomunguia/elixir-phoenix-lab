@@ -5,4 +5,3 @@ defmodule Discuss.PageController do
     render conn, "index.html"
   end
 end
-
