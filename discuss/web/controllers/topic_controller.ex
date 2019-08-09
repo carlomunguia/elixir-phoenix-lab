@@ -8,8 +8,3 @@ defmodule Discuss.TopicController do
   end
 end
 
-
-
-
-
-
