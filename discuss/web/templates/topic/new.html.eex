@@ -6,3 +6,4 @@
 
     <%= submit "Save Topic", class: "btn btn-primary" %>
 <% end %>
+
