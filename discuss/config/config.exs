@@ -40,6 +40,7 @@ config :ueberauth,
        providers: [
          github: {Ueberauth.Strategy.Github, [default_scope: "user,user:email,public_repo"]}
        ]
-config :ueberauth, Ueberauth.Strategy.Github.OAuth,
+config :ueberauth,
+       Ueberauth.Strategy.Github.OAuth,
 
 

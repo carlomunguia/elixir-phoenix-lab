@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Obliq 2 : Electric Boogaloo</title>
+    <title>Waveform Discussions!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -17,8 +17,19 @@
     <nav class="light-blue">
         <div class="nav-wrapper container">
           <a href="/" class="brand-logo">
-            Obliq: Human Being Edition
+            Waveform Discussions
           </a>
+          <ul class="right">
+            <%= if @conn.assigns[:user] do %>
+               <li>
+                <%= link "Sign Out", to: auth_path(@conn, :signout) %>
+               </li>
+            <% else %>
+               <li>
+                <%= link "Sign In with Github!", to: auth_path(@conn, :request, "github") %>
+               </li>
+            <% end %>
+          </ul>
         </div>
     </nav>
     <div class="container">
