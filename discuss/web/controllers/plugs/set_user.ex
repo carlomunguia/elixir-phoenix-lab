@@ -19,3 +19,4 @@ defmodule Discuss.Plugs.SetUser do
     end
   end
 end
+

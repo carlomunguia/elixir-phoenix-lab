@@ -43,4 +43,3 @@ config :ueberauth,
 config :ueberauth,
        Ueberauth.Strategy.Github.OAuth,
 
-
